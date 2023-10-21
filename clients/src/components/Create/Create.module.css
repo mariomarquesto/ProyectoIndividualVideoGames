@@ -1,0 +1,202 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:
+      ". btnHome ."
+      ". form ."
+      ". . .";
+    background-color: black;
+    min-height: 100vh;
+    overflow: scroll;
+  }
+  
+  .popup {
+    grid-area: form;
+    z-index: 2;
+  }
+  
+  .form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 17px 0px #ffee00;
+    box-shadow: 0px 0px 17px 0px #ffee00;
+  }
+  
+  .btnHome {
+    grid-area: btnHome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    margin: auto;
+    color: #000;
+    background-color: aqua;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btnHome:hover {
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 10px 5px #00e1ff;
+    box-shadow: 0px 0px 10px 5px #00e1ff;
+  }
+  
+  .input,
+  .select {
+    background-color: #00000069;
+    color: aqua;
+    text-shadow: 0px 0px 5px #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+    -webkit-box-shadow: 0px 0px 7px 0px #000000;
+    box-shadow: 0px 0px 7px 0px #000000;
+  }
+  .info input:focus,
+  .info textarea:focus,
+  .numbers input:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 10px 5px #000000;
+    box-shadow: 0px 0px 10px 5px #000000;
+  }
+  
+  .info textarea {
+    resize: vertical;
+  }
+  
+  ::placeholder {
+    color: yellow;
+    font-style: oblique;
+  }
+  
+  .info,
+  .numbers,
+  .select {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+      1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+  
+  .info {
+    width: 50%;
+  }
+  
+  .name,
+  .description,
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 7px;
+  }
+  
+  .selecteds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    margin-top: 5px;
+    gap: 10px;
+  }
+  
+  .select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 7px;
+    width: 100%;
+  }
+  
+  .select:focus-within {
+    -webkit-box-shadow: 0px 0px 10px 5px #000000;
+    box-shadow: 0px 0px 10px 5px #000000;
+  }
+  
+  .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .number {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    gap: 5px;
+    margin-top: 7px;
+  }
+  
+  .number input {
+    text-align: center;
+  }
+  
+  .btnSubmit {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: large;
+  }
+  
+  .btnSubmit:hover {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 10px 1px black;
+  }
+  
+  .dangerText {
+    color: red !important;
+  }
+  
+  .dangerShadow {
+    -webkit-box-shadow: 0px 0px 10px 5px #ff0000 !important;
+    box-shadow: 0px 0px 10px 5px #ff0000 !important;
+  }
+  
+  .validShadow {
+    -webkit-box-shadow: 0px 0px 10px 5px #33ff00 !important;
+    box-shadow: 0px 0px 10px 5px #33ff00 !important;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .numbers {
+      justify-content: center;
+    }
+    .number {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .info {
+      width: 200px;
+    }
+  
+    .select {
+      width: 200px;
+    }
+  }
+  

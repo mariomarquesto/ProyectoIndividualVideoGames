@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .container img {
+    width: 30%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .container img {
+      width: 80%;
+    }
+  }
+  

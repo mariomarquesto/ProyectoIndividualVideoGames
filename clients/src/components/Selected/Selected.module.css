@@ -1,0 +1,122 @@
+:root {
+    --bg-select: #0000003d;
+    --text-select-color: #ffee00;
+    --text-select-list: cyan;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: var(--text-select-color);
+    text-shadow: 0px 0px 5px #000000;
+    font-weight: bold;
+    gap: 2px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .btnClean {
+    display: flex;
+    margin-left: auto;
+    gap: 1px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    width: 100%;
+    gap: 4px;
+  }
+  
+  .buttons input {
+    border: none;
+    margin-right: auto;
+    background-color: var(--bg-select);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+    color: var(--text-select-list);
+    text-shadow: 0px 0px 5px #000000;
+  }
+  
+  .buttons input:focus {
+    outline: none;
+  }
+  
+  .buttons button {
+    background-color: var(--bg-select);
+    border: none;
+    opacity: 0.5;
+    border-radius: 5px;
+    width: 20px;
+  }
+  
+  .buttons button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 1;
+  }
+  
+  .list {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 5px;
+    color: var(--text-select-list);
+    background-color: #0000009d;
+    text-shadow: 0px 0px 5px #000000;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  
+  .item {
+    background-color: var(--bg-select);
+    color: var(--text-select-list);
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  .item button {
+    border: none;
+    color: black;
+    background-color: rgb(235, 235, 235);
+    opacity: 0.5;
+    margin-left: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .item button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 1;
+  }
+  
+  .elemList:hover {
+    cursor: pointer;
+    background-color: var(--text-select-list);
+    color: black;
+  }
+  

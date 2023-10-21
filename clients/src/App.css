@@ -1,0 +1,23 @@
+
+
+.App {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .App button,
+  .App input {
+    font-family: Roboto, sans-serif;
+  }
+  
+  .active-button {
+    background-color: #33ff00 !important;
+    border-color: #33ff00 !important;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 10px 5px #33ff00;
+    box-shadow: 0px 0px 10px 5px #00ff00 !important;
+  }
+  
+  :root {
+    --btn-background-color: red;
+  }
